@@ -1,0 +1,4 @@
+POST https://jira.delta.sbrf.ru/rest/atm/1.0/testrun
+Authorization: Basic c2F2Y2h1ay1hZzpQQVJBcGxhbjchQCM=
+Accept: application/json
+Content-Type: application/json

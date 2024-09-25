@@ -1,0 +1,8 @@
+${apache.poi.version}
+
+${apache.poi.version}
+
+if(row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+                Date birthdate = row.getCell(1).getDateCellValue();
+                System.out.println("birthdate :" + birthdate);
+            }

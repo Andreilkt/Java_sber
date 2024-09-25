@@ -1,0 +1,11 @@
+POST https://jira.delta.sbrf.ru/rest/atm/1.0/folder
+Authorization: Basic c2F2Y2h1ay1hZzpQQVJBcGxhbjchQCM=
+Accept: application/json
+Content-Type: application/json
+
+{
+  "projectKey": "GBK",
+  "name": "/Регресс/Тестовые прогоны/Прогон",
+  "type": "TEST_CASE"
+}
+

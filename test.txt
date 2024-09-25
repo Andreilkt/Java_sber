@@ -1,0 +1,15 @@
+StringBuilder requestData = new StringBuilder();
+
+for (Map.Entry param : params.entrySet()) {
+    if (requestData.length() != 0) {
+        requestData.append('&');
+    }
+    // Encode the parameter based on the parameter map we've defined
+    // and append the values from the map to form a single parameter
+    requestData.append(URLEncoder.encode(param.getKey(), "UTF-8"));
+    requestData.append('=');
+    requestData.append(URLEncoder.encode(String.valueOf(param.getValue()), "UTF-8"));
+}
+
+// Convert the requestData into bytes
+byte[] requestDataByes = requestData.toString().getBytes("UTF-8");

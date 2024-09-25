@@ -1,0 +1,34 @@
+POST https://jira.delta.sbrf.ru/rest/atm/1.0/testcase
+Authorization: Basic c2F2Y2h1ay1hZzpQQVJBcGxhbjchQCM=
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customFields": {
+    "Команда": "DA.Платформенные сервисы учёта.Учет. ГБК ЗОД и отчеты [60976920]",
+    "Согласование": "04-Не требуется",
+    "АС": "ППРБ ГК. Массовые операции и отчетность [CI02178443]",
+    "КЭ": "03 - ГК.МО",
+    "Уровень теста": "UI",
+    "Состояние": "Ready",
+    "Тип теста": "ИФТ",
+    "Автоматизирован": "Да",
+    "Вид тестирования": "Регресс",
+    "Тип операции": "02 - Нефинансовая"
+  },
+  "priority": "Normal",
+  "projectKey": "GBK",
+  "folder": "/Регресс/Тестовые прогоны/Прогон",
+
+  "testScript": {
+    "type": "STEP_BY_STEP",
+    "steps": [
+      {
+        "expectedResult": "Тест выполнен",
+        "description": "Выполнить тест"
+      }
+    ]
+  },
+  "name": "Дооценка счетов",
+  "status": "Актуальный"
+}
